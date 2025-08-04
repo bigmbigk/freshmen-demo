@@ -51,7 +51,7 @@ export default function Contact() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to start your freediving journey? We'd love to hear from you. Let's discuss how we can help you explore the underwater world.
+              Ready to start your freediving journey? We&apos;d love to hear from you. Let&apos;s discuss how we can help you explore the underwater world.
             </p>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function Contact() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Get in touch with us through any of these channels. We're here to help you start your freediving journey.
+                  Get in touch with us through any of these channels. We&apos;re here to help you start your freediving journey.
                 </p>
               </div>
 
@@ -331,9 +331,9 @@ export default function Contact() {
               </div>
               
               <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I join if I'm not a POSTECH student?</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I join if I&apos;m not a POSTECH student?</h3>
                 <p className="text-gray-600">
-                  Yes! While we're based at POSTECH, we welcome divers from all backgrounds and institutions.
+                  Yes! While we&apos;re based at POSTECH, we welcome divers from all backgrounds and institutions.
                 </p>
               </div>
               

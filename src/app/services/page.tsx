@@ -48,7 +48,7 @@ export default function Services() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive digital solutions tailored to your business needs. From concept to deployment, we've got you covered.
+              Comprehensive digital solutions tailored to your business needs. From concept to deployment, we&apos;ve got you covered.
             </p>
           </div>
         </div>
@@ -440,7 +440,7 @@ export default function Services() {
             Ready to Start Your Project?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss your requirements and create something amazing together.
+            Let&apos;s discuss your requirements and create something amazing together.
           </p>
           <Link
             href="/contact"
