@@ -8,6 +8,7 @@ export default function Members() {
   const [memberId, setMemberId] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -50,13 +51,59 @@ export default function Members() {
                 </Link>
               </div>
               <div className="md:hidden">
-                <button className="text-gray-700 hover:text-blue-600">
+                <button 
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                  className="text-gray-700 hover:text-blue-600 transition-colors"
+                >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 </button>
               </div>
             </div>
+            
+            {/* Mobile menu */}
+            {isMobileMenuOpen && (
+              <div className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                  <Link 
+                    href="/" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Home
+                  </Link>
+                  <Link 
+                    href="/about" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About
+                  </Link>
+                  <Link 
+                    href="/courses" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Courses
+                  </Link>
+                  <Link 
+                    href="/contact" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                  <Link 
+                    href="/members" 
+                    className="block px-3 py-2 text-blue-600 font-semibold rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Members
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
         </nav>
 
@@ -211,7 +258,7 @@ export default function Members() {
                 Members
               </Link>
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-4">
               <span className="text-sm text-gray-600">Welcome, Member!</span>
               <button
                 onClick={() => setIsLoggedIn(false)}
@@ -220,6 +267,73 @@ export default function Members() {
                 Logout
               </button>
             </div>
+            <div className="md:hidden">
+              <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Mobile menu */}
+            {isMobileMenuOpen && (
+              <div className="md:hidden">
+                <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                  <Link 
+                    href="/" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Home
+                  </Link>
+                  <Link 
+                    href="/about" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About
+                  </Link>
+                  <Link 
+                    href="/courses" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Courses
+                  </Link>
+                  <Link 
+                    href="/contact" 
+                    className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                  <Link 
+                    href="/members" 
+                    className="block px-3 py-2 text-blue-600 font-semibold rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Members
+                  </Link>
+                  <div className="border-t border-gray-200 pt-2 mt-2">
+                    <div className="px-3 py-2 text-sm text-gray-600">
+                      Welcome, Member!
+                    </div>
+                    <button
+                      onClick={() => {
+                        setIsLoggedIn(false);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="w-full text-left px-3 py-2 text-sm text-red-600 hover:text-red-700 transition-colors rounded-md"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </nav>
