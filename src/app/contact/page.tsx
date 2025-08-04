@@ -74,7 +74,7 @@ export default function Contact() {
                       type="text"
                       id="firstName"
                       name="firstName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900 placeholder-gray-500"
                       placeholder="John"
                     />
                   </div>
@@ -86,7 +86,7 @@ export default function Contact() {
                       type="text"
                       id="lastName"
                       name="lastName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900 placeholder-gray-500"
                       placeholder="Doe"
                     />
                   </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900 placeholder-gray-500"
                     placeholder="john@postech.ac.kr"
                   />
                 </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                     type="tel"
                     id="phone"
                     name="phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900 placeholder-gray-500"
                     placeholder="+82-10-1234-5678"
                   />
                 </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                     type="text"
                     id="studentId"
                     name="studentId"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900 placeholder-gray-500"
                     placeholder="2024XXXXX"
                   />
                 </div>
@@ -138,7 +138,7 @@ export default function Contact() {
                   <select
                     id="course"
                     name="course"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900"
                   >
                     <option value="">Select a course</option>
                     <option value="beginner">Beginner Course</option>
@@ -158,7 +158,7 @@ export default function Contact() {
                   <select
                     id="experience"
                     name="experience"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900"
                   >
                     <option value="">Select your experience level</option>
                     <option value="none">No experience</option>
@@ -177,7 +177,7 @@ export default function Contact() {
                     id="message"
                     name="message"
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-gray-900 placeholder-gray-500"
                     placeholder="Tell us about your goals, any specific questions, or additional information..."
                   ></textarea>
                 </div>
